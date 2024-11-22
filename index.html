@@ -1,39 +1,76 @@
-<!DOCTYPE html> 
-<html> 
-<head> <title>  Speak Now website </title> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak Now Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8981DF;
+            margin: 0;
+            padding: 20px;
+            color: white;
+        }
 
-<style> 
-div {
-  width: 300px;
-  height: 100px;
-  background-color: #EB4A32;
-  border: 1px solid black;
-   transform: translate(850px,100px);
-  
-}
-</style>
-  </head> 
-  <body bgcolor="#8981DF"> 
-<div>
-  <H1> <p style="color:white" align="center">     SPEAK NOW </h1> </p>
-</div>
-  <br>
-  <br>
-  <br>
-  <br>
-  
-  <h1> <p style="color:white">  Speak Now website, is the official, Speak Now Mobile App web, in this page you will found information about our future app and more content that will interest you. </p> </h1>
-  
-  
- 
-  
+        .header {
+            width: 300px;
+            height: 100px;
+            background-color: #EB4A32;
+            border: 1px solid black;
+            margin: 100px auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
+        .header h1 {
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+
+        .description {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .navigation button {
+            padding: 10px 15px;
+            background-color: #EB4A32;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .navigation button:hover {
+            background-color: #c93a26;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SPEAK NOW</h1>
+    </div>
+
+    <div class="description">
+        <h1>Speak Now website is the official Speak Now Mobile App web, where you will find information about our future app and more content that will interest you.</h1>
+    </div>
+
+    <div class="navigation">
+        <button onclick="window.open('https://youtube.com', '_blank')">More about Us</button>
+        <button>Mobile App</button>
+        <button>Register</button>
+        <button>Future Plan!</button>
+    </div>
 </body>
-
-<button popovertarget="youtube.com" 
-        type="button"> More about Us </button>
-<button type="button"> Mobile App </button>
-<button type="button"> Register </button>
-<button type="button"> Future plan! </button>
-
 </html>
