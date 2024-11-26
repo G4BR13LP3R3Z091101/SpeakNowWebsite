@@ -1,9 +1,198 @@
-<!DOCTYPE html> 
-<html> 
-<head> <title>  Speak Now website </title> 
-<body bgcolor="8981DF">
-HEELLOOO
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speak Now - Future Development</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #A791FF 0%, #8981DF 100%);
+            color: #333;
+            line-height: 1.7;
+            padding: 40px 20px;
+            margin: 0;
+        }
 
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-header {
+            background-color: #EB4A32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            font-size: 1.5em;
+        }
+
+        .intro-text {
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .features-section {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .features-section h2 {
+            color: #333;
+            border-bottom: 3px solid #EB4A32;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+        }
+
+        .features-list {
+            font-size: 1.1em;
+        }
+
+        .features-list > ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .features-list > ul > li {
+            background-color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            color: #333;
+        }
+
+        .features-list > ul > li:hover {
+            transform: scale(1.02);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .features-list ul ul {
+            margin-top: 10px;
+            padding-left: 20px;
+            list-style-type: disc;
+            color: #555;
+        }
+
+        .support-section {
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .support-section h2 {
+            color: #333;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+
+        .support-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .support-buttons button {
+            background-color: #EB4A32;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: 600;
+        }
+
+        .support-buttons button:hover {
+            background-color: #c93a26;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .support-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .support-buttons button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-header">
+            <h1>Speak Now: Future Development Roadmap</h1>
+        </div>
+
+        <div class="intro-text">
+            <p>We're committed to creating an innovative, educational, and engaging platform that supports your child's communication and learning journey.</p>
+        </div>
+
+        <div class="features-section">
+            <h2>Exciting Features Coming Soon</h2>
+            <div class="features-list">
+                <ul>
+                    <li>
+                        <strong>Multilingual Learning</strong>
+                        <ul>
+                            <li>Spanish, Portuguese, French, English, and more!</li>
+                            <li>Breaking language barriers for global communication</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Interactive Educational Games</strong>
+                        <ul>
+                            <li>Fun, engaging learning experiences</li>
+                            <li>Designed to make education enjoyable</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Personalized Learning Environments</strong>
+                        <ul>
+                            <li>Customizable menus for each child</li>
+                            <li>Adaptive interfaces tailored to individual needs</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Seasonal and Themed Content</strong>
+                        <ul>
+                            <li>Special menus for holidays like Christmas and Halloween</li>
+                            <li>Keep learning exciting and fresh</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Parent-Child Interaction Platform</strong>
+                        <ul>
+                            <li>Real-time progress tracking</li>
+                            <li>Collaborative learning tools</li>
+                            <li>Comprehensive parental monitoring</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
 </body>
 </html>
