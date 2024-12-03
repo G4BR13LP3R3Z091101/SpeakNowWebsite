@@ -9,10 +9,11 @@
             background-color: #8981DF;
             margin: 0;
             padding: 0;
+            color: white;
         }
         .container {
             width: 50%;
-            margin: auto;
+            margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
@@ -22,50 +23,43 @@
             text-align: center;
             color: #333;
         }
-        label {
-            display: block;
-            margin: 10px 0 5px;
-            color: #555;
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
+        iframe {
             width: 100%;
-            padding: 10px;
-            margin: 5px 0 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border: none;
+            border-radius: 8px;
         }
-        textarea {
-            resize: vertical;
-            height: 150px;
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
         }
-        button {
-            width: 100%;
-            padding: 10px;
+        .navigation button {
+            padding: 10px 15px;
             background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
-        button:hover {
+        .navigation button:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1> Register Form </h1>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSceDXsElbQrhQDfONKj5YIpGEjy15dG7XxOrZEdQNG8XDYpOg/viewform?embedded=true" width="640" height="959" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        <h1>Register Form</h1>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSceDXsElbQrhQDfONKj5YIpGEjy15dG7XxOrZEdQNG8XDYpOg/viewform?embedded=true" height="959" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
     </div>
 
-     <div class="navigation">
-        <button onclick="window.open('index.html')">Back to Home</button>
-        <button onclick="window.open('future.html')">Future Plan</button>
-         <button onclick="window.open('about.html')">More About US</button>
-        <button onclick="window.open('mobile.html')">Mobile App</button>
+    <div class="navigation">
+        <button onclick="window.location.href='index.html'">Back to Home</button>
+        <button onclick="window.location.href='future.html'">Future Plan</button>
+        <button onclick="window.location.href='about.html'">More About Us</button>
+        <button onclick="window.location.href='mobile.html'">Mobile App</button>
     </div>
 </body>
 </html>
