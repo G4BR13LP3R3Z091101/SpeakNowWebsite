@@ -64,6 +64,64 @@
         .navigation button:hover {
             background-color: #c93a26;
         }
+
+        .team-section {
+            margin-top: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .team-section h2 {
+            background-color: #EB4A32;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .team-table {
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: 1fr;
+            background-color: #4a3f39;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .team-table .member {
+            padding: 20px;
+            font-size: 1.1em;
+            background-color: #8981DF;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .team-table .member:last-child {
+            border-bottom: none;
+        }
+
+        .team-table .member:hover {
+            background-color: #A791FF;
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+        }
+
+        .team-image {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .team-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -71,68 +129,22 @@
         <h1>SPEAK NOW</h1>
     </div>
 
-  <div class="team-section">
-    <h2>TEAM MEMBERS</h2>
-    <div class="team-table">
-        <div class="member">Gabriel Alfonso Pérez Zazueta</div>
-        <div class="member">Ángel Yahel Solís Córdova</div>
-        <div class="member">Luis Angel Hernández Mendoza</div>
-        <div class="member"> Marco Antonio Hernández Beltrán </div>
+    <div class="team-section">
+        <h2>TEAM MEMBERS</h2>
+        <div class="team-table">
+            <div class="member">Gabriel Alfonso Pérez Zazueta</div>
+            <div class="member">Ángel Yahel Solís Córdova</div>
+            <div class="member">Luis Angel Hernández Mendoza</div>
+            <div class="member">Marco Antonio Hernández Beltrán</div>
+        </div>
+
+        <div class="team-image">
+            <img src="spteam2.jpg" alt="Speak Now Team">
+        </div>
     </div>
-</div>
 
-<style>
-    .team-section {
-        margin-top: 40px;
-        text-align: center;
-        color: white;
-    }
-
-    .team-section h2 {
-        background-color: #EB4A32;
-        padding: 10px;
-        border-radius: 8px;
-        font-size: 1.5em;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 20px;
-    }
-
-    .team-table {
-        display: grid;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: 1fr;
-        background-color: #4a3f39;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .team-table .member {
-        padding: 20px;
-        font-size: 1.1em;
-        background-color: #8981DF;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        color: white;
-    }
-
-    .team-table .member:last-child {
-        border-bottom: none;
-    }
-
-    .team-table .member:hover {
-        background-color: #A791FF;
-        transform: scale(1.02);
-        transition: all 0.3s ease;
-    }
-</style>
-  
     <h2>Why Are We Doing This?</h2>
     <p>My name is Gabriel Alfonso Pérez Zazueta, and I started this project inspired by my mom’s idea. I have a sister with autism who doesn’t speak, and my goal is to make it possible for all children like her to communicate with their families. By creating the Speak Now app, we aim to make life easier for these children and help them connect with the world around them.</p>
-</div>
-
 
     <div class="navigation">
         <button onclick="window.location.href='index.html'">Back to Home</button>
