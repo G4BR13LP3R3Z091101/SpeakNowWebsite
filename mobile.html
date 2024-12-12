@@ -5,76 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speak Now - Mobile App</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #8981DF;
+            font-family: 'Arial', sans-serif;
+            background-color: #F4F4F9;
             margin: 0;
-            padding: 20px;
-            color: white;
+            padding: 0;
+            color: #333;
         }
 
+        /* Header */
         .header {
-            width: 300px;
-            height: 100px;
             background-color: #EB4A32;
-            border: 1px solid black;
-            margin: 100px auto 20px;
+            color: white;
+            padding: 20px;
+            text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
+        }
+
+        .header img {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            max-height: 60px;
         }
 
         .header h1 {
-            color: white;
-            text-align: center;
             margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
         }
 
-        .description {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
+        /* Content Section */
         .content {
-            max-width: 800px;
-            margin: 40px auto;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
 
-        .navigation {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
+        .content h1 {
+            color: #EB4A32;
+            margin-bottom: 20px;
         }
 
-        .navigation button {
-            padding: 10px 15px;
-            background-color: #EB4A32;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .navigation button:hover {
-            background-color: #c93a26;
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
         }
 
         .progress-info {
-            background-color: #4a3f39;
+            background-color: #8981DF;
+            color: white;
             padding: 20px;
-            margin-top: 20px;
             border-radius: 8px;
+            margin: 30px 0;
             text-align: left;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         .progress-info p {
-            font-size: 18px;
+            font-size: 1.1em;
         }
 
+        /* App Images Section */
         .app-images {
             margin-top: 40px;
         }
@@ -85,30 +86,61 @@
             margin: 20px auto;
             display: block;
             border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .app-images h2 {
+            font-size: 1.8em;
+            color: #EB4A32;
+            margin-bottom: 15px;
+        }
+
+        /* Navigation Buttons */
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .navigation button {
+            padding: 12px 20px;
+            font-size: 1em;
+            background-color: #EB4A32;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .navigation button:hover {
+            background-color: #c93a26;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
     <div class="header">
+        <img src="spi.png" alt="Speak Now Logo">
         <h1>SPEAK NOW</h1>
     </div>
 
-    <div class="description">
-        <h1>Welcome to the progress page of the Speak Now Mobile App!</h1>
-    </div>
-
     <div class="content">
+        <h1>Discover the Speak Now Mobile App</h1>
+        <p>The Speak Now Mobile App is our groundbreaking tool designed to empower non-verbal children to communicate effectively. Developed with love, innovation, and determination, this app is the heart of our mission to bring families closer together.</p>
+
         <div class="progress-info">
-            <p>Currently, We are building the Speak Now app using Thunkable. Thunkable has been an incredible platform that allows us to create this app without deep programming knowledge, yet still achieve a high-quality, user-friendly design. Every day, we are pushing forward to make this app the best it can be, and we are putting in the hard work to turn this dream into a reality. We believe in the power of technology to connect people, and we are excited to see how Speak Now will help users communicate and engage with one another in new and meaningful ways.</p>
+            <h2>Current Progress</h2>
+            <p>We are building the Speak Now app using Thunkable, an intuitive platform that allows us to focus on delivering a user-friendly and inclusive design. Our team works tirelessly every day to ensure this app meets the highest standards of functionality and accessibility. Join us as we transform the way children and families connect!</p>
         </div>
 
-        <!-- App Images Section -->
         <div class="app-images">
-            <h2>App Screenshots</h2>
+            <h2>App Sneak Peek</h2>
             <img src="mmenu.png" alt="Main Menu Screenshot">
-            <img src="spek.png" alt="App Screenshot">
-            <img src="language.png" alt="language select">
+            <img src="spek.png" alt="Speak Screenshot">
+            <img src="language.png" alt="Language Select Screenshot">
             <img src="dfpre.png" alt="Default Preset Screenshot">
         </div>
     </div>
