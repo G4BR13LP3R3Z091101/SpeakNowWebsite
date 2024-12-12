@@ -3,84 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speak Now Website</title>
+    <title>Speak Now - Official Website</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #8981DF;
+            font-family: 'Arial', sans-serif;
+            background-color: #F4F4F9;
             margin: 0;
-            padding: 20px;
-            color: white;
+            padding: 0;
+            color: #333;
         }
 
+        /* Header Styles */
         .header {
-            width: 300px;
-            height: 100px;
             background-color: #EB4A32;
-            border: 1px solid black;
-            margin: 100px auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .header h1 {
-            color: white;
-            text-align: center;
             margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
         }
 
-        .description {
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #8981DF, #A791FF);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            line-height: 1.6;
             max-width: 800px;
             margin: 0 auto;
-            text-align: center;
         }
 
+        /* Navigation Section */
         .navigation {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
+            gap: 15px;
+            margin-top: 30px;
         }
 
         .navigation button {
-            padding: 10px 15px;
+            padding: 12px 20px;
+            font-size: 1em;
             background-color: #EB4A32;
             color: white;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, background-color 0.3s;
         }
 
         .navigation button:hover {
             background-color: #c93a26;
+            transform: scale(1.05);
         }
 
-        img {
-            display: block;
-            margin: 20px auto; /* Center the image horizontally */
-            max-width: 50%; /* Make the image smaller */
-            height: auto; /* Maintain aspect ratio */
-            border: 2px solid white; /* Optional: Add a border around the image */
+        /* Logo Section */
+        .logo {
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #EB4A32;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Coming Soon Section */
+        .coming-soon {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .coming-soon span {
+            font-weight: bold;
+            color: #EB4A32;
         }
     </style>
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <h1>SPEAK NOW</h1>
-    </div>
+    </header>
 
-    <div class="description">
-        <h1>Speak Now website is the official Speak Now Mobile App web, where you will find information about our future app and more content that will interest you.</h1>
-    </div>
+    <section class="hero">
+        <h1>Welcome to Speak Now</h1>
+        <p>The official Speak Now Mobile App website where you can find information about our future app and explore exciting content tailored for you.</p>
+    </section>
 
     <div class="navigation">
-        <button onclick="window.location.href='about.html'"> More about Us </button>
-        <button onclick="window.location.href='mobile.html'"> Mobile App </button>
-        <button onclick="window.location.href='register.html'"> Register </button>
-        <button onclick="window.location.href='future.html'"> Future Plan! </button>
+        <button onclick="window.location.href='about.html'">About Us</button>
+        <button onclick="window.location.href='mobile.html'">Mobile App</button>
+        <button onclick="window.location.href='register.html'">Register</button>
+        <button onclick="window.location.href='future.html'">Future Plan</button>
     </div>
-    
-    <img src="spi.png" alt="Speak Now Logo"/>
+
+    <div class="logo">
+        <img src="spi.png" alt="Speak Now Logo">
+    </div>
+
+    <div class="coming-soon">
+        <p>Privacy Policy: <span>Coming Soon</span></p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Speak Now. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
 </body>
 </html>
