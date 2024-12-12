@@ -5,146 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Speak Now</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #8981DF;
+            font-family: 'Arial', sans-serif;
+            background-color: #F4F4F9;
             margin: 0;
-            padding: 20px;
-            color: white;
+            padding: 0;
+            color: #333;
         }
 
+        /* Header */
         .header {
-            width: 300px;
-            height: 100px;
             background-color: #EB4A32;
-            border: 1px solid black;
-            margin: 100px auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .header h1 {
-            color: white;
-            text-align: center;
             margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
         }
 
+        /* Main Content */
         .content {
             max-width: 800px;
             margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
         .content h2 {
-            font-size: 24px;
+            color: #EB4A32;
+            margin-bottom: 15px;
         }
 
         .content p {
-            font-size: 18px;
+            font-size: 1.1em;
             line-height: 1.6;
+            color: #555;
         }
 
+        /* Team Section */
+        .team-section {
+            margin: 30px 0;
+        }
+
+        .team-section h2 {
+            font-size: 1.8em;
+            color: #EB4A32;
+            margin-bottom: 20px;
+        }
+
+        .team-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .team-member {
+            padding: 15px;
+            background: #8981DF;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            background: #A791FF;
+        }
+
+        /* Navigation Buttons */
         .navigation {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
+            gap: 15px;
+            margin-top: 30px;
         }
 
         .navigation button {
-            padding: 10px 15px;
+            padding: 12px 20px;
+            font-size: 1em;
             background-color: #EB4A32;
             color: white;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, background-color 0.3s;
         }
 
         .navigation button:hover {
             background-color: #c93a26;
+            transform: scale(1.05);
         }
 
-        .team-section {
-            margin-top: 40px;
-            text-align: center;
-            color: white;
-        }
-
-        .team-section h2 {
-            background-color: #EB4A32;
-            padding: 10px;
-            border-radius: 8px;
-            font-size: 1.5em;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-        }
-
-        .team-table {
-            display: grid;
-            grid-template-rows: repeat(4, 1fr);
-            grid-template-columns: 1fr;
-            background-color: #4a3f39;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .team-table .member {
-            padding: 20px;
-            font-size: 1.1em;
-            background-color: #8981DF;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-            color: white;
-        }
-
-        .team-table .member:last-child {
-            border-bottom: none;
-        }
-
-        .team-table .member:hover {
-            background-color: #A791FF;
-            transform: scale(1.02);
-            transition: all 0.3s ease;
-        }
-
-        .team-image {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .team-image img {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>SPEAK NOW</h1>
-    </div>
+    <header class="header">
+        <h1>About Us - Speak Now</h1>
+    </header>
 
-    <div class="team-section">
-        <h2>TEAM MEMBERS</h2>
-        <div class="team-table">
-            <div class="member">Gabriel Alfonso Pérez Zazueta</div>
-            <div class="member">Ángel Yahel Solís Córdova</div>
+    <div class="content">
+        <h2>Our Mission</h2>
+        <p>Speak Now is a project inspired by love and determination. My name is Gabriel Alfonso Pérez Zazueta, and I started this initiative inspired by my mom’s idea and motivated by my sister, who has autism and doesn’t speak. Our goal is to help children with similar conditions communicate with their families and live fulfilling lives. Through the Speak Now app, we aim to bring the power of connection and understanding to every family in need.</p>
+
+        <div class="team-section">
+            <h2>Meet the Team</h2>
+            <div class="team-list">
+                <div class="team-member">Gabriel Alfonso Pérez Zazueta - Founder & Main Developer</div>
+                <div class="team-member">Ángel Yahel Solís Córdova - Co-founder & Developer</div>
+            </div>
         </div>
-
-  
-    <h2>Why Are We Doing This?</h2>
-    <p>My name is Gabriel Alfonso Pérez Zazueta, and I started this project inspired by my mom’s idea. I have a sister with autism who doesn’t speak, and my goal is to make it possible for all children like her to communicate with their families. By creating the Speak Now app, we aim to make life easier for these children and help them connect with the world around them.</p>
+    </div>
 
     <div class="navigation">
         <button onclick="window.location.href='index.html'">Back to Home</button>
         <button onclick="window.location.href='future.html'">Future Plan</button>
         <button onclick="window.location.href='register.html'">Register</button>
-        <button onclick="window.location.href='mobile.html'">Mobile App!</button>
+        <button onclick="window.location.href='mobile.html'">Mobile App</button>
     </div>
 </body>
 </html>
