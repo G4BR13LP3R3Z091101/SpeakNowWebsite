@@ -2,152 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speak Now - Future Development</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
-
+        /* Global Styles */
         body {
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #A791FF 0%, #8981DF 100%);
-            color: #333;
-            line-height: 1.7;
-            padding: 40px 20px;
+            font-family: 'Arial', sans-serif;
+            background-color: #F4F4F9;
             margin: 0;
+            padding: 0;
+            color: #333;
         }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
-            padding: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .main-header {
+        /* Header */
+        .header {
             background-color: #EB4A32;
             color: white;
-            text-align: center;
             padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            font-size: 1.5em;
-        }
-
-        .intro-text {
-            font-size: 1.2em;
             text-align: center;
-            margin-bottom: 30px;
-            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
         }
 
-        .features-section {
-            background-color: rgba(255, 255, 255, 0.3);
+        .header img {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            max-height: 60px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
             border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #EB4A32;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Features Section */
+        .features-section {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
         }
 
         .features-section h2 {
             color: #333;
-            border-bottom: 3px solid #EB4A32;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-size: 1.4em;
+            margin-bottom: 15px;
         }
 
-        .features-list {
-            font-size: 1.1em;
-        }
-
-        .features-list > ul {
+        .features-list ul {
             list-style-type: none;
             padding: 0;
+            background-color: #FF5733;
+            border-radius: 10px;
+            margin: 0;
+            padding: 20px;
         }
 
-        .features-list > ul > li {
-            background-color: rgba(255, 255, 255, 0.6);
+        .features-list ul li {
+            background-color: #FF6F61;
             margin-bottom: 15px;
             padding: 15px;
             border-radius: 8px;
             transition: transform 0.3s ease;
-            color: #333;
+            color: white;
         }
 
-        .features-list > ul > li:hover {
+        .features-list ul li:hover {
             transform: scale(1.02);
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: #FF8F71;
         }
 
-        .features-list ul ul {
-            margin-top: 10px;
+        .features-list ul li ul {
             padding-left: 20px;
-            list-style-type: disc;
-            color: #555;
+            margin-top: 10px;
+            font-size: 1em;
+            color: #FFD700;
         }
 
-        .support-section {
-            background-color: rgba(255, 255, 255, 0.4);
-            border-radius: 10px;
-            padding: 30px;
-            text-align: center;
+        .features-list ul li ul li {
+            background-color: transparent;
+            margin-bottom: 10px;
+            color: #C7C7C7;
         }
 
-        .support-section h2 {
-            color: #333;
-            font-size: 1.4em;
-            margin-bottom: 20px;
-        }
-
-        .support-buttons {
+        /* Navigation Buttons */
+        .navigation {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
+            margin-top: 30px;
         }
 
-        .support-buttons button {
+        .navigation button {
+            padding: 12px 20px;
+            font-size: 1em;
             background-color: #EB4A32;
             color: white;
             border: none;
-            padding: 15px 30px;
-            font-size: 1.1em;
+            border-radius: 5px;
             cursor: pointer;
-            border-radius: 8px;
-            transition: background-color 0.3s, transform 0.2s;
-            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, background-color 0.3s;
         }
 
-        .support-buttons button:hover {
+        .navigation button:hover {
             background-color: #c93a26;
             transform: scale(1.05);
         }
 
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
-
-            .support-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .support-buttons button {
-                width: 100%;
-                margin-bottom: 10px;
-            }
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="main-header">
-            <h1>Speak Now: Future Development Roadmap</h1>
-        </div>
+    <header class="header">
+        <img src="spi.png" alt="Speak Now Logo">
+        <h1>Speak Now Project</h1>
+    </header>
 
-        <div class="intro-text">
-            <p>We're committed to creating an innovative, educational, and engaging platform that supports your child's communication and learning journey.</p>
-        </div>
+    <div class="content">
+        <h2>Future Development</h2>
+        <p>We are working to create a platform that will empower children and families with special needs by enhancing communication through technology. Here's a glimpse of the exciting features we have planned:</p>
 
         <div class="features-section">
             <h2>Exciting Features Coming Soon</h2>
@@ -195,9 +195,9 @@
 
         <div class="navigation">
             <button onclick="window.location.href='index.html'">Back to Home</button>
-            <button onclick="window.location.href='mobile.html'">Mobile App!</button>
-            <button onclick="window.location.href='register.html'">Register!</button>
-            <button onclick="window.location.href='about.html'">More about us!</button>
+            <button onclick="window.location.href='mobile.html'">Mobile App</button>
+            <button onclick="window.location.href='register.html'">Register</button>
+            <button onclick="window.location.href='about.html'">More About Us</button>
         </div>
     </div>
 </body>
